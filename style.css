@@ -1,0 +1,62 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #525252;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+.inp-num {
+    width: 170px;
+    text-align: center;
+    height: 20px;
+}
+.inp-sub {
+    height: 20px;
+    background-color: white;
+    border: 0;
+    color: black;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.note {
+    margin-top: 10px;
+    color: lightgrey;  
+}
+
+.player {
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+}
+.player button {
+    border: 1px solid black;
+    font-size: large;
+    padding: 3px;
+    border-radius: 3px;
+    transition: border .5s;
+    margin-top: 5px;
+}
+.inc {
+    background-color: blue;
+    color: white;
+}
+.dec {
+    background-color: red;
+    color: white;
+}
+.reset {
+    background-color: black;
+    color: white;
+}
+
+.player button:hover {
+    border: 1px solid white;
+}
