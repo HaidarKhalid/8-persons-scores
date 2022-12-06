@@ -2,27 +2,41 @@
     margin: 0;
     padding: 0;
 }
-
+body, html {
+    height: 100%;
+}
 body {
     box-sizing: border-box;
-    background-color: #525252;
     color: white;
     letter-spacing: 2px;
     font-weight: bold;
     text-align: center;
 }
+
 .inp-num {
     width: 170px;
-    text-align: center;
-    height: 20px;
+    text-align: center; 
+    padding: 6px 5px;
+    background-color: rgba(0,0,0, 0.4); 
+    border: 1px solid #f1f1f1;
+    color: white;
+    font-weight: bold;
+
 }
 .inp-sub {
-    height: 20px;
     background-color: white;
     border: 0;
-    color: black;
+    color: white;
+    padding: 3px 5px;
     font-size: large;
     margin-top: 10px;
+    background-color: rgba(0,0,0, 0.4); 
+    border: 1px solid #f1f1f1;
+    font-weight: bold;
+}
+.inp-sub:hover {
+    background-color: rgba(0, 0, 0, 0.541); 
+
 }
 
 .note {
@@ -59,4 +73,80 @@ body {
 
 .player button:hover {
     border: 1px solid white;
+}
+
+.refresh-btn {
+    background-color: whitesmoke;
+    border: black 1px solid;
+    padding: 10px 20px;
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.refresh-btn::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.refresh-btn:hover::before {
+    width: 300px;
+    height: 100px;
+}
+.refresh-btn:hover {
+    color: white;
+    border: 1px solid white;
+}
+.refresh-text {
+    position: relative;
+}
+.bg-image {
+    
+  /* The image used */
+  background-image: url(photos/karthik-balakrishnan-NrS53eUKgiE-unsplash.jpg);
+
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(5px);
+
+  /* Full height */
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.contact {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px 10px;
+    transition: .3s;
+}
+.contact:hover {
+    border: 1px solid black;
+    color: white;
 }
